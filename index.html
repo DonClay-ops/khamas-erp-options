@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khamas Group | Microsoft ERP Options | BEMEA</title><style>
+:root{--navy:#0b2545;--navy2:#13315c;--teal:#00a6a6;--teal2:#2ec4b6;--gold:#e8b04b;--bc:#0f9d8a;--fo:#3a5bd9;--bg:#f4f7fb;--card:#fff;--ink:#1d2a3a;--mute:#5b6b7f;--red:#d9534f;--line:#e3e9f1}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:linear-gradient(120deg,var(--navy),var(--navy2) 60%,#0e4f6e);color:#fff;padding:22px 40px 0}
+.brand{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--teal),var(--teal2));display:grid;place-items:center;font-weight:800;font-size:15px}
+.logo b{font-size:18px;letter-spacing:1px}.logo small{display:block;font-size:12px;opacity:.75}
+.client{text-align:right;font-size:13px;opacity:.9}.client b{display:block;font-size:16px}
+h1{font-size:28px;font-weight:700;margin:18px 0 4px}.sub{opacity:.8;font-size:15px;margin-bottom:18px}
+nav{display:flex;gap:4px;overflow-x:auto}
+nav button{background:transparent;border:0;color:#c9d6e8;padding:12px 16px;font-size:14px;font-weight:600;cursor:pointer;border-radius:10px 10px 0 0;white-space:nowrap}
+nav button:hover{color:#fff;background:rgba(255,255,255,.08)}
+nav button.active{background:var(--bg);color:var(--navy)}
+nav button span{display:inline-block;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.15);font-size:11px;line-height:20px;text-align:center;margin-right:6px}
+nav button.active span{background:var(--teal);color:#fff}
+main{max-width:1240px;margin:0 auto;padding:30px 30px 60px}
+section{display:none;animation:fade .45s ease}section.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+h2{font-size:24px;color:var(--navy);margin-bottom:6px}
+.lead{color:var(--mute);margin-bottom:24px;max-width:880px}
+.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border-radius:16px;padding:22px;box-shadow:0 2px 10px rgba(11,37,69,.06);border:1px solid var(--line)}
+.card h3{font-size:17px;color:var(--navy);margin-bottom:8px}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
+.pill.bc{background:#e0f5f1;color:var(--bc)}.pill.fo{background:#e6ebfc;color:var(--fo)}
+ul.clean{list-style:none}ul.clean li{padding:5px 0 5px 22px;position:relative;font-size:14px}
+ul.clean li:before{content:"";position:absolute;left:4px;top:12px;width:8px;height:8px;border-radius:50%;background:var(--teal)}
+ul.x li:before{background:var(--red)}ul.fo li:before{background:var(--fo)}
+.biz{cursor:pointer;transition:.25s}.biz:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(11,37,69,.12)}
+.biz .ic{font-size:30px;margin-bottom:8px}.biz .co{font-size:13px;color:var(--mute);margin-bottom:10px}
+.biz .needs{max-height:0;overflow:hidden;transition:max-height .4s}.biz.open .needs{max-height:400px}
+.biz .more{font-size:12px;color:var(--teal);font-weight:600}
+.analogy{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px}
+.an{border-radius:16px;padding:24px;color:#fff}.an.bc{background:linear-gradient(135deg,#0f9d8a,#14b8a0)}.an.fo{background:linear-gradient(135deg,#2f49b8,#4f6ee8)}
+.an h3{color:#fff;font-size:20px}.an p{font-size:14px;margin-top:6px}.an .big{font-size:40px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--navy);color:#fff;font-weight:600}tr:hover td{background:#f8fbff}
+td.k{font-weight:600;color:var(--navy);width:22%}
+.toggle{display:inline-flex;background:#e6ecf4;border-radius:30px;padding:4px;margin-bottom:20px}
+.toggle button{border:0;background:transparent;padding:10px 22px;border-radius:30px;font-weight:700;cursor:pointer;color:var(--mute);font-size:14px}
+.toggle button.on.bcb{background:var(--bc);color:#fff}.toggle button.on.fob{background:var(--fo);color:#fff}
+.flow{display:flex;flex-wrap:wrap;margin:10px 0 22px}
+.step{flex:1;min-width:130px;background:#fff;border:2px solid var(--line);border-radius:14px;padding:14px;margin:6px;cursor:pointer;transition:.25s}
+.step:hover,.step.sel{border-color:currentColor;transform:translateY(-3px)}
+.step .n{width:26px;height:26px;border-radius:50%;color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center;margin-bottom:8px}
+.step b{font-size:13.5px;display:block;color:var(--ink)}.step small{font-size:12px;color:var(--mute)}
+.bcflow .step{color:var(--bc)}.bcflow .n{background:var(--bc)}.foflow .step{color:var(--fo)}.foflow .n{background:var(--fo)}
+.detail{background:#fff;border-left:5px solid var(--teal);border-radius:10px;padding:16px 20px;min-height:70px;font-size:14px;margin-bottom:20px}
+.foflow+.detail{border-color:var(--fo)}
+.lim{background:#fff7f6;border:1px solid #f4d3d0}.str{background:#f3fbf8;border:1px solid #cdeee3}
+.calc{display:grid;grid-template-columns:320px 1fr;gap:20px}
+.ctrl label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin:14px 0 6px}
+.ctrl input[type=range]{width:100%;accent-color:var(--teal)}
+.ctrl input[type=number]{width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;font-size:14px}
+.ctrl .val{float:right;color:var(--teal);font-weight:700}
+.chk{display:flex;gap:8px;align-items:flex-start;font-weight:400 !important;margin-top:14px}
+.bars{margin-top:18px}.bar{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:13px}
+.bar .lbl{width:110px}.bar .trk{flex:1;background:#e6ecf4;border-radius:8px;height:26px;overflow:hidden}
+.bar .fill{height:100%;border-radius:8px;transition:width .6s;color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;padding-left:10px;white-space:nowrap}
+.note{font-size:12px;color:var(--mute);margin-top:14px}
+.tco th,.tco td{text-align:right}.tco th:first-child,.tco td:first-child{text-align:left}
+.tco tr.t td{font-weight:800;background:#f1f6fb;font-size:15px}
+.corner{position:relative;height:330px;background:#fff;border-radius:16px;border:1px solid var(--line);margin-bottom:20px;overflow:hidden}
+.node{position:absolute;width:150px;padding:12px;border-radius:14px;text-align:center;font-size:13px;font-weight:600;color:#fff;box-shadow:0 6px 16px rgba(0,0,0,.12);z-index:2}
+.node small{display:block;font-weight:400;font-size:11px}
+.c1{left:4%;top:40px;background:var(--navy)}.c2{left:31%;top:40px;background:var(--teal)}.c3{right:31%;top:40px;background:var(--teal)}.c4{right:4%;top:40px;background:var(--navy2)}
+.c5{left:50%;transform:translateX(-50%);bottom:30px;background:var(--gold);color:#3b2a00;width:190px}
+.packet{position:absolute;width:16px;height:16px;border-radius:4px;background:var(--gold);z-index:3;box-shadow:0 0 10px var(--gold);opacity:0}
+.path{position:absolute;height:3px;background:repeating-linear-gradient(90deg,#c9d6e8 0 8px,transparent 8px 14px);top:72px}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:10px}
+.tl{background:#fff;border-radius:14px;padding:14px;border:1px solid var(--line);border-top:5px solid var(--teal)}
+.tl.hot{border-top-color:var(--red);background:#fff8f7}.tl .d{font-weight:800;color:var(--navy);font-size:15px}.tl p{font-size:12.5px;color:var(--mute)}
+.alert{background:linear-gradient(90deg,#fff1e6,#fff);border-left:5px solid var(--red);padding:16px 20px;border-radius:10px;margin:18px 0;font-size:14px}
+.q{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.q p{font-size:14.5px;flex:1}.q small{display:block;color:var(--mute);font-size:12px}
+.yn{display:flex;gap:6px}.yn button{border:1px solid var(--line);background:#fff;padding:8px 16px;border-radius:20px;font-weight:700;cursor:pointer;color:var(--mute)}
+.yn button.y.on{background:var(--navy);color:#fff}.yn button.n.on{background:#8a99ad;color:#fff}
+.bl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.bl button{border:1px solid var(--line);background:#fff;padding:10px 16px;border-radius:12px;cursor:pointer;font-weight:600;font-size:13.5px;color:var(--navy)}
+.bl button.on{background:var(--navy);color:#fff}
+.meter{height:16px;border-radius:10px;background:linear-gradient(90deg,var(--bc),#cfd8e3 50%,var(--fo));position:relative;margin:14px 0 6px}
+.meter i{position:absolute;top:-6px;width:6px;height:28px;background:var(--navy);border-radius:3px;transition:left .5s;left:calc(50% - 3px)}
+.verdict{font-size:18px;font-weight:800;margin-top:10px}.ml{display:flex;justify-content:space-between;font-size:12px;font-weight:700}
+.ops{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:16px 0}
+.ops .bx{background:#fff;border:2px solid var(--line);border-radius:14px;padding:14px;text-align:center;flex:1;min-width:150px;font-size:13px}
+.ops .bx b{display:block;color:var(--navy);font-size:14px}.ops .ar{font-size:22px;color:var(--teal)}
+.why{text-align:center}.why .ic{font-size:30px}
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.demo .card{border-top:6px solid var(--bc)}.demo .card.f{border-top-color:var(--fo)}
+.dc{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.dc div{background:#f1f6fb;border-radius:10px;padding:10px;font-size:12px;color:var(--mute)}.dc b{display:block;font-size:16px;color:var(--navy)}
+.y1{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.y1 .p{border-radius:16px;padding:24px;color:#fff}.y1 .p.bc{background:linear-gradient(135deg,#0c7f70,#12a58f)}.y1 .p.fo{background:linear-gradient(135deg,#283f9e,#4766de)}
+.y1 .p h3{color:#fff;font-size:18px}.y1 .row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:14px}
+.y1 .row span:last-child{font-weight:700}.y1 .tot{font-size:34px;font-weight:800;margin-top:10px}.y1 .tag{font-size:12px;opacity:.85}
+.notes{position:fixed;right:18px;bottom:18px;width:380px;max-height:55vh;overflow:auto;background:#fffbea;border:2px solid var(--gold);border-radius:14px;padding:16px 18px;box-shadow:0 10px 30px rgba(0,0,0,.18);font-size:13.5px;z-index:50}
+.notes h4{color:#8a5a00;margin-bottom:6px;font-size:13px;letter-spacing:.5px}
+.notes ul{padding-left:18px}.notes li{margin:4px 0}
+.notes.hide{display:none}
+.nbtn{position:fixed;right:18px;bottom:18px;z-index:49;background:var(--gold);color:#3b2a00;border:0;border-radius:24px;padding:10px 16px;font-weight:700;cursor:pointer}
+footer{text-align:center;font-size:12px;color:var(--mute);padding:20px}
+@media(max-width:800px){.calc,.analogy,.demo,.y1{grid-template-columns:1fr}.g2{grid-template-columns:1fr}header{padding:18px}.notes{width:90vw}}
+</style></head><body>
+<header><div class="brand"><div class="logo"><div class="mark">BE</div><div><b>BEMEA</b><small>Business Experts MEA LLC | Microsoft Partner</small></div></div>
+<div class="client">Prepared for<b>Khamas Group of Investment Co.</b>Microsoft ERP &amp; CRM Options</div></div>
+<h1>Two Microsoft paths for Khamas Group</h1>
+<div class="sub">Dynamics 365 Business Central Premium &nbsp;|&nbsp; Dynamics 365 Finance + Project Operations</div>
+<nav id="nav"><button class="active" data-t="group"><span>1</span>Your Group</button><button class="" data-t="options"><span>2</span>The Two Options</button><button class="" data-t="projects"><span>3</span>How Projects Work</button><button class="" data-t="inv1"><span>4</span>Investment</button><button class="" data-t="cloud_client"><span>5</span>Why Cloud</button></nav></header>
+<main><section id="group" class="active">
+  <h2>Six businesses, one financial picture</h2>
+  <p class="lead">Each business runs differently, but the Group needs one view of cash, costs and profit. Click any card to see what that business needs from an ERP.</p>
+  <div class="grid g3" id="bizGrid"></div></section>
+<section id="options" class="">
+  <h2>Two Microsoft options, explained simply</h2>
+  <p class="lead">Both are Microsoft cloud ERPs, both are secure and both grow with you. The difference is size, depth and complexity.</p>
+  <div class="analogy">
+    <div class="an bc"><div class="big">&#127970;</div><h3>Business Central Premium</h3><p>Like a well-equipped <b>office tower</b>: everything a mid-sized group needs is already on each floor. Quick to move in, easy to run.</p></div>
+    <div class="an fo"><div class="big">&#127961;</div><h3>Finance + Project Operations</h3><p>Like a <b>corporate headquarters campus</b>: built for large, complex, multi-country groups. Very powerful, with a bigger build and more to run.</p></div>
+  </div>
+  <div class="card"><table>
+    <tr><th>What matters to you</th><th>Business Central Premium</th><th>Finance + Project Operations</th></tr>
+    <tr><td class="k">Best suited to</td><td>Mid-sized groups and growing businesses</td><td>Large enterprises with complex, high-volume operations</td></tr>
+    <tr><td class="k">Time to go live</td><td>Faster, can be phased by company</td><td>Longer, needs more design and testing</td></tr>
+    <tr><td class="k">Ease of use</td><td>Simple, familiar Microsoft look and feel</td><td>Powerful, with more screens and more training</td></tr>
+    <tr><td class="k">Multiple companies</td><td>Yes, with group consolidation</td><td>Yes, with stronger shared services and intercompany automation</td></tr>
+    <tr><td class="k">Projects &amp; contracting</td><td>Good project costing and billing; advanced contracting needs add-ons</td><td>Advanced: contracts, milestones, retention, revenue recognition, resourcing</td></tr>
+    <tr><td class="k">Manufacturing (Woodpecker)</td><td>Included in Premium</td><td>Needs Supply Chain Management in addition</td></tr>
+    <tr><td class="k">Service &amp; maintenance (elevators)</td><td>Service contracts and service orders included in Premium</td><td>Needs Dynamics 365 Field Service in addition</td></tr>
+    <tr><td class="k">Hotels on Opera</td><td>Hotel financials in the ERP, Opera revenue posted daily</td><td>Hotel financials in the ERP, Opera revenue posted daily</td></tr>
+    <tr><td class="k">CRM</td><td>Built-in contacts, opportunities and quotes; can connect to Dynamics 365 Sales</td><td>Quotes and contracts in Project Operations; full CRM through Dynamics 365 Sales</td></tr>
+    <tr><td class="k">Copilot (AI)</td><td>Included</td><td>Included</td></tr>
+    <tr><td class="k">UAE e-Invoicing</td><td>&#10004; Available through BEMEA</td><td>&#10004; Available through BEMEA</td></tr>
+  </table></div></section>
+<section id="projects" class="">
+  <h2>How a project works, from first quote to final invoice</h2>
+  <p class="lead">Contracting, MEP, joinery and development all run on projects. Switch between the two options and click each step to see what happens.</p>
+  <div class="toggle"><button class="on bcb" id="pbc">Business Central Projects</button><button class="fob" id="pfo">Project Operations + Project Accounting</button></div>
+  <div id="projBC">
+    <div class="flow bcflow" id="flowBC"></div><div class="detail" id="detBC"></div>
+    <div class="grid g2">
+      <div class="card str"><h3>&#10004; Strengths</h3><ul class="clean">
+        <li>Budget vs actual for every project and task, in real time</li>
+        <li>Materials, labour, subcontractors and expenses all post to the project</li>
+        <li>Work-in-progress (WIP) and percentage-of-completion accounting</li>
+        <li>Invoice by milestone, by stage or by cost incurred</li>
+        <li>Timesheets with approval for staff and site teams</li>
+        <li>Simple for project managers and accountants to learn</li></ul></div>
+      <div class="card lim"><h3>&#9888; Limitations</h3><ul class="clean x">
+        <li>No standard retention or advance-payment recovery on progress invoices; needs a construction add-on or extension</li>
+        <li>No standard BOQ (bill of quantities) or interim payment certificates</li>
+        <li>Subcontractor valuations handled through purchase orders, not a dedicated subcontract module</li>
+        <li>Resource scheduling is basic: capacity per resource, no skills matching</li>
+        <li>Revenue recognition via WIP methods, not a full contract revenue engine</li></ul></div>
+    </div>
+  </div>
+  <div id="projFO" style="display:none">
+    <div class="flow foflow" id="flowFO"></div><div class="detail" id="detFO"></div>
+    <div class="card" style="margin-bottom:18px"><h3>Two parts working together</h3>
+      <div class="grid g2" style="margin-top:8px">
+        <div><span class="pill fo">PROJECT OPERATIONS</span><p style="font-size:14px;margin-top:8px">The front office: quotes, contracts, project planning, resource booking, timesheets and expenses. Built for project managers.</p></div>
+        <div><span class="pill fo">PROJECT ACCOUNTING (in Finance)</span><p style="font-size:14px;margin-top:8px">The back office: project budgets and budget control, cost and revenue posting, WIP, revenue recognition, contract funding, billing rules and retention. Built for finance.</p></div>
+      </div></div>
+    <div class="grid g2">
+      <div class="card str"><h3>&#10004; Strengths</h3><ul class="clean fo">
+        <li>Contract billing rules: fixed price, time and materials, milestones, progress billing</li>
+        <li>Retention on contract invoices as standard</li>
+        <li>Contract funding: split a project between several funders or customers</li>
+        <li>Budget control that can block spending above budget</li>
+        <li>Revenue recognition for long contracts (percentage of completion)</li>
+        <li>Resource booking by role, skill and availability across companies</li></ul></div>
+      <div class="card lim"><h3>&#9888; Limitations</h3><ul class="clean x">
+        <li>Runs on two connected systems (Dataverse and Finance), which adds complexity</li>
+        <li>Longer implementation and more training for site and project teams</li>
+        <li>Still no standard BOQ or real estate unit sales; these need add-ons</li>
+        <li>Higher licence cost per user</li>
+        <li>Needs experienced internal admins to run it well</li></ul></div>
+    </div>
+  </div></section>
+<section id="inv1" class="">
+  <h2>First-year investment (USD)</h2>
+  <p class="lead">An indicative view of the first year, covering implementation for at least 6 legal entities and one year of Microsoft licences. Final figures will be confirmed after a short discovery phase.</p>
+  <div class="card ctrl" style="margin-bottom:18px;max-width:520px"><label>Full users <span class="val" id="uV">20</span></label><input type="range" id="users" min="10" max="100" value="20"></div>
+  <div class="y1">
+    <div class="p bc"><span class="tag">OPTION A</span><h3>Business Central Premium</h3>
+      <div class="row"><span>Licence per full user / month</span><span>$110</span></div>
+      <div class="row"><span>Licences for the year</span><span id="a2"></span></div>
+      <div class="row"><span>Implementation (starting from)</span><span id="a1"></span></div>
+      <div class="tag" style="margin-top:14px">First-year investment</div><div class="tot" id="a3"></div></div>
+    <div class="p fo"><span class="tag">OPTION B</span><h3>Finance + Project Operations</h3>
+      <div class="row"><span>Licence per full user / month</span><span>$240</span></div>
+      <div class="row"><span>Licences for the year</span><span id="b2"></span></div>
+      <div class="row"><span>Implementation (starting from)</span><span id="b1"></span></div>
+      <div class="tag" style="margin-top:14px">First-year investment</div><div class="tot" id="b3"></div></div>
+  </div>
+  <p class="note" id="fx"></p>
+  <p class="note">Microsoft list prices, paid yearly, in USD, excluding VAT. Finance + Project Operations = Finance ($210) + Project Operations attach ($30) per user. Furniture manufacturing and elevator stock on F&amp;O would also need Supply Chain Management, and elevator maintenance would need Field Service. Excludes e-invoicing provider fees, Opera interface, third-party add-ons and support plans.</p></section>
+<section id="cloud_client" class="">
+  <h2>Why Microsoft cloud</h2>
+  <p class="lead">Whichever option you choose, you stop buying and running servers. Microsoft runs the platform; your teams run the business.</p>
+  <div class="grid g3">
+    <div class="card why"><div class="ic">&#128421;</div><h3>No servers to buy</h3><p style="font-size:14px">No hardware, data-centre or server licence costs, and no replacement cycles.</p></div>
+    <div class="card why"><div class="ic">&#128260;</div><h3>Always up to date</h3><p style="font-size:14px">Microsoft delivers updates and new features automatically. No costly upgrade projects.</p></div>
+    <div class="card why"><div class="ic">&#128274;</div><h3>Security &amp; backups</h3><p style="font-size:14px">Enterprise security, backups and disaster recovery managed by Microsoft.</p></div>
+    <div class="card why"><div class="ic">&#129302;</div><h3>Copilot AI included</h3><p style="font-size:14px">AI help for finance, sales and operations is built in.</p></div>
+    <div class="card why"><div class="ic">&#128241;</div><h3>Work from anywhere</h3><p style="font-size:14px">Browser, phone and tablet access for head office, sites and hotels.</p></div>
+    <div class="card why"><div class="ic">&#128279;</div><h3>Works with Microsoft 365</h3><p style="font-size:14px">Outlook, Excel, Teams and Power BI connect to your ERP data.</p></div>
+  </div>
+  <h2 style="margin-top:34px">See it with your own scenarios</h2>
+  <p class="lead">BEMEA can run a tailored demo of either option, or both, using Khamas examples.</p>
+  <div class="demo">
+    <div class="card"><span class="pill bc">DEMO A</span><h3 style="margin-top:8px">Business Central Premium</h3><ul class="clean"><li>AIC contracting project from budget to invoice</li><li>Dulaila maintenance contract and service visit</li><li>Woodpecker bespoke production order</li><li>Opera revenue to hotel P&amp;L</li><li>Group consolidation and UAE e-invoice</li></ul></div>
+    <div class="card f"><span class="pill fo">DEMO B</span><h3 style="margin-top:8px">Finance + Project Operations</h3><ul class="clean fo"><li>Quote to contract with billing rules</li><li>Resource booking across companies</li><li>Progress billing with retention</li><li>Project budget control and revenue recognition</li><li>Group consolidation and UAE e-invoice</li></ul></div>
+  </div></section>
+</main>
+<footer>Prepared by BEMEA | Indicative and for discussion only. Not a binding offer. Prices in USD, excluding VAT.</footer>
+
+<script>
+const $=id=>document.getElementById(id);
+const fmt=n=>'$'+Math.round(n).toLocaleString('en-US');
+const setC=(c,v)=>document.querySelectorAll('.'+c).forEach(e=>e.textContent=v);
+
+document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('#nav button').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+  b.classList.add('active');$(b.dataset.t).classList.add('active');
+  if(b.dataset.t==='einv'&&typeof runPacket==='function')runPacket();
+  if(typeof showNotes==='function')showNotes(b.dataset.t);
+  window.scrollTo({top:0,behavior:'smooth'});});
+
+const biz=[
+ {i:'&#127976;',n:'Hotels & Hospitality',c:'Khamas Hospitality: Mama Shelter, Canvas Hotel (MGallery), DoubleTree by Hilton Al Jadaf, Royal Ascot, Sea View, Ascot Hotel, plus Ritz-Carlton Residences, Courtyard by Marriott JVC and Moxy Dubai World Central',
+  d:['Financials only, with Opera kept for hotel operations','Profit and loss per hotel and per department','Daily Opera revenue posted to the ERP','City ledger, payables and bank']},
+ {i:'&#127959;',n:'Real Estate Development',c:'Kappa Acca',
+  d:['Development project budgets and cost tracking','Unit sales and payment plans','Escrow and collections tracking','Contractor and consultant payments']},
+ {i:'&#128679;',n:'Contracting & Construction',c:'AIC Contracting',
+  d:['Tender and project budgets','Progress billing and retention','Subcontractor payments','Site materials, labour and plant costs']},
+ {i:'&#9889;',n:'Electromechanical (MEP)',c:'Mirage (MEC): design, engineering, procurement and construction',
+  d:['Design-to-build project costing','Procurement of equipment and materials','Progress billing on contracts','Labour and timesheets per project']},
+ {i:'&#128727;',n:'Elevators: Supply, Installation & Maintenance',c:'Dulaila International Agency (FUJI and SANYO)',
+  d:['Import and stock of elevators and spare parts','Installation projects','Annual maintenance contracts with recurring billing','Service visits and technician job cards']},
+ {i:'&#129681;',n:'Furniture & Joinery Manufacturing',c:'Woodpecker Furniture Industry LLC, Al Quoz: bespoke joinery, furniture and turnkey interiors',
+  d:['Bills of materials and production orders','Bespoke, made-to-order costing per job','Turnkey interior projects with installation','Raw material and finished goods stock']}
+];
+$('bizGrid').innerHTML=biz.map(b=>`<div class="card biz" onclick="this.classList.toggle('open')"><div class="ic">${b.i}</div><h3>${b.n}</h3><div class="co">${b.c}</div><div class="needs"><ul class="clean">${b.d.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="more">What it needs &#9662;</div></div>`).join('');
+const fBC=[
+ ['Quote','Sales quote linked to a project','A sales quote is prepared and, once accepted, turned into a project. Built-in CRM tracks the opportunity.'],
+ ['Set up project','Tasks and budget lines','The project is broken into tasks (for example: civil works, MEP, finishing). Each task has a budget for materials, labour and subcontract.'],
+ ['Buy & consume','POs, stock, timesheets','Purchase orders, stock issues, subcontractor invoices and approved timesheets all post costs directly to the project and task.'],
+ ['Track','Budget vs actual, WIP','Managers see budget vs actual by task. Finance runs work-in-progress (WIP) to recognise revenue fairly over the project life.'],
+ ['Invoice','Milestone or cost-based','Invoices are raised by milestone or stage. Retention and advance recovery need a construction add-on.'],
+ ['Close','Final WIP and margin','The project is completed, WIP is reversed and final margin is reported per project and per company.']];
+const fFO=[
+ ['Opportunity & quote','Project Operations','The opportunity is tracked, and a project quote is built from roles, estimates and price lists, with margin visible before you submit.'],
+ ['Contract','Billing rules & funding','The won quote becomes a project contract. Each contract line has its own billing method (fixed price, milestones, time and materials) and funding source.'],
+ ['Plan & resource','Schedule and book people','The project plan is built and resources are booked by role, skill and availability, including across companies.'],
+ ['Execute','Time, expenses, materials','Teams log time and expenses; materials and subcontracts post to the project. Approved transactions flow to Project Accounting in Finance.'],
+ ['Control','Budget control & WIP','Project Accounting enforces budget control, calculates WIP and recognises revenue for long contracts using percentage of completion.'],
+ ['Bill','Progress billing & retention','Invoice proposals are created per billing rule, with retention held and released as standard.']];
+function flow(id,det,arr){const el=$(id);
+  el.innerHTML=arr.map((s,i)=>`<div class="step" data-i="${i}"><div class="n">${i+1}</div><b>${s[0]}</b><small>${s[1]}</small></div>`).join('');
+  el.querySelectorAll('.step').forEach(s=>s.onclick=()=>{el.querySelectorAll('.step').forEach(x=>x.classList.remove('sel'));s.classList.add('sel');
+    $(det).innerHTML='<b>'+arr[s.dataset.i][0]+':</b> '+arr[s.dataset.i][2];});
+  el.querySelector('.step').click();}
+flow('flowBC','detBC',fBC);flow('flowFO','detFO',fFO);
+$('pbc').onclick=()=>{$('projBC').style.display='';$('projFO').style.display='none';$('pbc').className='on bcb';$('pfo').className='fob'};
+$('pfo').onclick=()=>{$('projBC').style.display='none';$('projFO').style.display='';$('pfo').className='on fob';$('pbc').className='bcb'};
+
+
+function calc(){const u=+$('users').value;$('uV').textContent=u;
+  const bY=u*110*12,fY=u*240*12,iB=50000,iF=100000;
+  $('a1').textContent=fmt(iB);$('a2').textContent=fmt(bY);$('a3').textContent=fmt(iB+bY);
+  $('b1').textContent=fmt(iF);$('b2').textContent=fmt(fY);$('b3').textContent=fmt(iF+fY);
+  $('fx').textContent=`How it is calculated: ${u} users x $110 x 12 months = ${fmt(bY)}, plus implementation from ${fmt(iB)} (Business Central). ${u} users x $240 x 12 months = ${fmt(fY)}, plus implementation from ${fmt(iF)} (Finance + Project Operations).`;}
+$('users').addEventListener('input',calc);calc();
+
+</script></body></html>
